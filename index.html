@@ -8,9 +8,14 @@
 
     <link rel="stylesheet" href="estilo.css">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+        crossorigin="anonymous">
+        
 </head>
 
-<body>
+<body class="p-3 mb-2 bg-secondary text-white">
     <header>
         <h1>Bem-vindos à DNC</h1>
         <img src="assets/images/logodnc.png">
@@ -24,8 +29,35 @@
             <label>Senha</label>
             <input id="in" type="password" placeholder="**********">
 
-            <input type="submit" value="Entrar"></input>
-        </form>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Entrar
+            </button>
+        </form> 
     </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered text-dark">
+            <div class="modal-content black">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Em Breve
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Olá,</p>
+                    <p>Este projeto está em fase de constante aperfeiçoamento. Obrigado pelo seu interesse. Em breve entraremos em contato</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

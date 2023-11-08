@@ -38,7 +38,7 @@ form {
     form input::placeholder {
         padding: 5px;
     }
-    form input[type="submit"] {
+    form button {
         background-color: #0c70f2;
         color: white;
         font-size: 12pt;
