@@ -8,11 +8,11 @@ function changemodal() {
     let input02 = document.getElementById("input02");
 
     if (input01.value == "" || input02.value == "") {
-        console.log('Parece que um dos campos está vazio!');
-
-        document.getElementById("exampleModalLabel").innerHTML = 
+        document.getElementsByClassName("modal-title").innerHTML = 
             'Opsss...';
         document.getElementsByClassName("modal-body").innerHTML =
             'Para validar o Login, precisamos que você preencha os campos do formulário. :-)';
+
+            console.log('Parece que pelo menos um dos campos está vazio!');
     }
 }
