@@ -58,7 +58,7 @@ form {
     main {
         width: 80%;
     }
-    #in {
+    .in {
         height: 30px;
         border-radius: 6px;
     }
