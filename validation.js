@@ -15,4 +15,5 @@ document.getElementById("input02").addEventListener("input", () => {
 document.getElementById("btn01").addEventListener("click", () => {
     document.getElementById("input01").value = '';
     document.getElementById("input02").value = '';
+    document.getElementById("btn01").disabled = true;
 })
